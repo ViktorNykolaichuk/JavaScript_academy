@@ -3,7 +3,10 @@
 //, subtraction, division, multiplication
 let addition = (a, b) => a + b;
 let subtraction = (a, b) => a - b;
-let division = (a, b) => a / b;
+function division (a, b) {
+    let result = (b === 0) ? "Cannot divide by 0" : a / b;
+    return result;
+} 
 let multiplication = (a, b) => a * b;
 
 function calc(number1, operator, number2) {
@@ -22,7 +25,7 @@ function calc(number1, operator, number2) {
 }
 console.log(calc(121, "+", 54));
 console.log(calc(12, "-", 1));
-console.log(calc(12, "/", 6));
+console.log(calc(12, "/", 0));
 console.log(calc(5, "*", 12));
 
 // 2. Параметри та колбеки:
