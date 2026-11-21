@@ -27,6 +27,7 @@ class Person {
     }
 }
 let secondPerson = new Person("John", 30);
+console.log(secondPerson);
 secondPerson.sayHello();
 
 // 3. Наслідування:
@@ -45,4 +46,5 @@ class Student extends Person {
 }
 
 let student = new Student("Marek", 20, 1);
+console.log(student);
 student.study();
